@@ -22,6 +22,6 @@
 
 
 	function doManipulations() {
-		var messageBar = originalHtml.match(/site-message-bar/);
+		var messageBar = originalHtml.match(/<script\b[^>]*>([\s\S]*?)<\/script>/gm);
 	}
 })();

@@ -48,6 +48,9 @@
 
 		var about = capturedDocument.querySelectorAll(".section.about")[0].parentNode;
 		removeElements([about]);
+
+		var script = capturedDocument.getElementsByTagName("script");
+		removeElements(script);
 	}
 
 })();
